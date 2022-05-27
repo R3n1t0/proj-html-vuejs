@@ -1,10 +1,10 @@
 <template>
   <header class="container-fluid">
-    <div class="top container pt-3">
+    <div class="top container">
       <TopComp />
     </div>
 
-    <div class="bottom">
+    <div class="bottom d-flex justify-content-center pt-3">
       <JumboComp />
     </div>
   </header>

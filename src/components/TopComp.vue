@@ -5,7 +5,7 @@
 
         <nav>
           <ul class="d-flex align-items-center mb-0">
-            <img src="../assets/svg/svg-0.svg" alt="">
+            <img :src="svg0">
             <li>HOME</li>
             <li>PAGES</li>
             <li>MENU</li>
@@ -17,7 +17,7 @@
         <img src="../assets/img/h5-logo-divided-header.png" alt="">
       </div>
 
-      <div class="right d-flex justify-content-between">
+      <div class="right d-flex justify-content-between align-items-center">
         <nav>
           <ul class="d-flex mb-0 px-0">
             <li>EVENT</li>
@@ -37,8 +37,14 @@
 </template>
 
 <script>
+
 export default {
-  name: "TopComp"
+  name: "TopComp",
+  data(){
+    return{
+      svg0: require("../assets/svg/svg-0.svg")
+    }
+  }
 }
 </script>
 
@@ -53,26 +59,25 @@ export default {
     width: 30px;
     height: 10px;
     margin: 3px;
-    fill: #ffffff;
+    color: #ffffff;
   }
   li{
-     margin-right: 30px;
+     margin-right: 40px;
   }
 } 
 
 .center{
   height: 100%;
   img{
-    height: 85%;
+    height: 75%;
   }
 }
 
 .right{
   width: 40%;
   li{
-    margin-left: 30px;
+    margin-left: 40px;
   }
-
   .search-cart{
     a{
       text-decoration: none;
