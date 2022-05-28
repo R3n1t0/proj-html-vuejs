@@ -4,7 +4,7 @@
       <TopComp />
     </div>
 
-    <div class="bottom d-flex justify-content-center pt-3">
+    <div class="bottom container-fluid-flex justify-content-center pt-3">
       <JumboComp />
     </div>
   </header>
@@ -36,7 +36,6 @@ header{
   }
 
   .bottom{
-    width: 100%;
     height: calc(100% - 150px);
   }
 }

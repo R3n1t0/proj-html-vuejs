@@ -1,11 +1,17 @@
 <template>
-  <div class="container container-fluid">
-    <div class="row">
-      <div
-        v-for="(picture, index) in pictures" 
-        :key="index"
-        class="co-4">
-        <img :src="picture.url" alt="">
+  <div class="container-fluid">
+    <div class="row py-2">
+      <div class="col-3 rl-col ps-0">
+        <img src="../assets/img/h3-img-1.jpg" alt="">
+      </div>
+      <div class="col-3 rl-col ps-0 pe-1">
+        <img src="../assets/img/h3-img-2.jpg" alt="">
+      </div> 
+      <div class="col-3 rl-col pe-0 ps-2">
+        <img src="../assets/img/h3-img-3.jpg" alt="">
+      </div>
+      <div class="col-3 rl-col pe-0">
+        <img src="../assets/img/h3-img-4.jpg" alt="">
       </div>
     </div>
   </div>
@@ -29,7 +35,7 @@ export default {
         },
         {
           url: "../assets/img/h3-img-4.jpg"
-        },
+        }
       ]
     }
   }
@@ -37,5 +43,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.rl-col{
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 </style>

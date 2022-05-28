@@ -1,19 +1,17 @@
 <template>
-  <div class="jumbo-card">
-    <div @click="prevSlide()" class="prev"></div>
-    
-    <img class="front" :src="slides[counterSlide].front" alt="Crust">
-    <img class="back" :src="slides[counterSlide].back" alt="Crust">
-
-    <div @click="nextSlide()" class="next"></div>
+  <div class="jumbo-card d-flex justify-content-center">
+    <img src="../assets/img/h3-rev-img-1.png" alt="">
+    <img class="first" src="../assets/img/h3-rev-img-2.png" alt="">
   </div>
+ 
 </template>
 
 <script>
 export default {
   name: "JumboComp",
+}
 
-  data(){
+/*   data(){
     return{
       slides:[
         {
@@ -35,6 +33,11 @@ export default {
       autoScroll: null
     
     }
+  */
+
+/*   mounted(){
+    this.startAutoScroll();
+    this.changeImage(); 
   },
 
   methods: {
@@ -65,26 +68,24 @@ export default {
         this.nextSlide();
       },3000)
     }
-  },
-
-  mounted(){
-    this.startAutoScroll();
-    this.changeImage(); 
   }
-}
+} */
 
 </script>
 
 <style lang="scss" scoped> 
 .jumbo-card{
   position: relative;
-  .front{
+  .first{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -270px; /* Half the height */
-    margin-left: -180px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
+
+
 
 </style>
