@@ -15,35 +15,10 @@
           v-for="(pizza, index) in pizzas"
           :key="index"
           class="pizza-card d-flex justify-content-center align-items-center flex-column">
-          <img :src=pizza.src :alt="pizza.name">
-          <p>{{pizza.name}}</p>
+          <img :src = "require(`../assets/img/h3-product-img-${pizza.src}.png`)" :alt="pizza.name">
+          <p class="pt-3 pb-0">{{pizza.name}}</p>
           <span>{{pizza.price}}</span>
         </div>
-<!--         <div class="pizza-card d-flex justify-content-center align-items-center flex-column">
-          <img src="../assets/img/h3-product-img-2a-150x150.png" alt="product-2">
-          <p>FIORI DI ZUCCA</p>
-          <span>$7.00 - $50.00</span>
-        </div>
-        <div class="pizza-card d-flex justify-content-center align-items-center flex-column">
-          <img src="../assets/img/h3-product-img-3a-150x150.png" alt="product-3">
-          <p>FIORI DI ZUCCA</p>
-          <span>$7.00 - $50.00</span>
-        </div>
-        <div class="pizza-card d-flex justify-content-center align-items-center flex-column">
-          <img src="../assets/img/h3-product-img-4a-150x150.png" alt="product-4">
-          <p>FIORI DI ZUCCA</p>
-          <span>$7.00 - $50.00</span>
-        </div>
-        <div class="pizza-card d-flex justify-content-center align-items-center flex-column">
-          <img src="../assets/img/h3-product-img-5a-150x150.png" alt="product-5">
-          <p>FIORI DI ZUCCA</p>
-          <span>$7.00 - $50.00</span>
-        </div>
-        <div class="pizza-card d-flex justify-content-center align-items-center flex-column">
-          <img src="../assets/img/h3-product-img-6a-100x100.png" alt="product-6">
-          <p>FIORI DI ZUCCA</p>
-          <span>$7.00 - $50.00</span>
-        </div>  -->
         
       </div>
     </div>
@@ -58,32 +33,32 @@ export default {
     return{
       pizzas:[
         {
-          src: "../assets/img/h3-product-img-1a-100x100.png",
+          src: "1a-100x100",
           price: "$55.00",
           name: "CAMPAGNOLA"
         },
         {
-          src: "../assets/img/h3-product-img-2a-150x150.png",
+          src: "2a-150x150",
           price: "$7.00 - $55.00",
           name: "FIORI DI ZUCCA"
         },
         {
-          src: "../assets/img/h3-product-img-3a-150x150.png",
+          src: "3a-150x150",
           price: "$30.00",
           name: "FRANCESCANA"
         },
         {
-          src: "../assets/img/h3-product-img-4a-150x150.png",
+          src: "4a-150x150",
           price: "$45.00",
           name: "VALDOSTANA"
         },
         {
-          src: "../assets/img/h3-product-img51a-150x150.png",
-          price: "$25.00",
+          src: "5a-150x150",
+          price: "$25.00 - $55.00",
           name: "TARTUFATA"
         },
         {
-          src: "../assets/img/h3-product-img-6a-100x100.png",
+          src: "6a-100x100",
           price: "$15.00",
           name: "BISMARCK"
         }
@@ -113,7 +88,7 @@ export default {
     .pizza-card{
       width: calc(100% / 5);
       img{
-        width: 70%;
+        width: 80%;
       }
       p{
         color: #b68a2c;
