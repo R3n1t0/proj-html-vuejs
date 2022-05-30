@@ -4,7 +4,7 @@
       <TopComp />
     </div>
 
-    <div class="bottom container-fluid-flex justify-content-center pt-3">
+    <div class="jumbotron bottom container-fluid-flex justify-content-center pt-3">
       <JumboComp />
     </div>
   </header>

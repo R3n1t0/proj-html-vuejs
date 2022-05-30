@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center top">
+  <div class="top d-flex justify-content-center align-items-center">
     <div class="left d-flex justify-content-between align-items-center">
         <a>ORDER ONLINE</a>
 
@@ -14,7 +14,7 @@
       </div>
 
       <div class="center d-flex align-items-center m-4">
-        <img src="../assets/img/h5-logo-divided-header.png" alt="">
+        <img src="../assets/img/h5-logo-divided-header.png" alt="logo-header">
       </div>
 
       <div class="right d-flex justify-content-between align-items-center">

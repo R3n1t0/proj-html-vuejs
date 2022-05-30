@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid rl-container">
+  <div class="build container-fluid rl-container">
     <div class="text">
       <h1>
         GO AHEAD AND BUILD YOUR OWN PIZZA WE WON’T JUDGE!

@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid rl-container py-2">
+  <div class="specials container-fluid rl-container py-2">
     <div class="row rl-row">
       <div class="left col-6 d-flex justify-content-center align-items-center">
-        <img src="../assets/img/h1-img-7n.png" alt="">
+        <img src="../assets/img/h1-img-7n.png" alt="img-7">
       </div>
 
       <div class="col-5 right">
@@ -69,7 +69,6 @@ export default {
         color: #ab4027;
       }
           
-      
       p{
         color: #767676;
       }

@@ -5,6 +5,7 @@
     <TestimonialsComp />
     <SpecialsComp />
     <BuildComp />
+    <PartnersComp />
     <FlavorsComp />
     <DealsComp />
     <ReserveComp />
@@ -18,6 +19,7 @@ import HeaderComp from './components/HeaderComp.vue'
 import TestimonialsComp from './components/TestimonialsComp.vue'
 import SpecialsComp from './components/SpecialsComp.vue'
 import BuildComp from './components/BuildComp.vue'
+import PartnersComp from './components/PartnersComp.vue'
 import FlavorsComp from './components/FlavorsComp.vue'
 import DealsComp from './components/DealsComp.vue'
 import ReserveComp from './components/ReserveComp.vue'
@@ -30,6 +32,7 @@ export default {
     TestimonialsComp,
     SpecialsComp,
     BuildComp,
+    PartnersComp,
     FlavorsComp,
     DealsComp,
     ReserveComp,

@@ -1,8 +1,8 @@
 <template>
   <div class="jumbo-card d-flex justify-content-center">
     <button class="prev d-flex justify-content-center align-items-end pb-1">PREV</button>
-    <img src="../assets/img/h3-rev-img-1.png" alt="">
-    <img class="first" src="../assets/img/h3-rev-img-2.png" alt="">
+    <img src="../assets/img/h3-rev-img-1.png" alt="rev-1">
+    <img class="first" src="../assets/img/h3-rev-img-2.png" alt="rev-2">
     <div class="next d-flex justify-content-center align-items-end pb-1">NEXT</div>
   </div>
  
@@ -109,7 +109,5 @@ export default {
     bottom: 50%;
   }
 }
-
-
 
 </style>

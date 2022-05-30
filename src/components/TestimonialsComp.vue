@@ -1,20 +1,20 @@
 <template>
 
-  <div class="rl-container">
+  <div class="testimonial rl-container">
 
     <div class="container-fluid">
       <div class="row py-2">
         <div class="col-3 rl-col pe-2">
-          <img src="../assets/img/h3-img-1.jpg" alt="">
+          <img src="../assets/img/h3-img-1.jpg" alt="img-1">
         </div>
         <div class="col-3 rl-col pe-2">
-          <img src="../assets/img/h3-img-2.jpg" alt="">
+          <img src="../assets/img/h3-img-2.jpg" alt="img-2">
         </div> 
         <div class="col-3 rl-col pe-2">
-          <img src="../assets/img/h3-img-3.jpg" alt="">
+          <img src="../assets/img/h3-img-3.jpg" alt="img-3">
         </div>
-        <div class="col-3 rl-col ps-2">
-          <img src="../assets/img/h3-img-4.jpg" alt="">
+        <div class="col-3 rl-col ">
+          <img src="../assets/img/h3-img-4.jpg" alt="img-4">
         </div>
       </div>
     </div>
