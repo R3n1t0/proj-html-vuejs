@@ -1,5 +1,5 @@
 <template>
-  <div class="flavors d-flex justify-content-center align-items-center flex-column">
+  <div class="flavors d-flex justify-content-center align-items-center flex-column py-5">
     <div class="best d-flex justify-content-center align-items-center flex-column py-5">  
       <span class="red">CHOOSE YOURE FLAVOR</span>
       <h1 class="pb-2">THE BEST PIZZA IN TOWN</h1>
@@ -8,7 +8,7 @@
       </p> 
     </div>
 
-    <div class="pizza-slider">
+    <div class="pizza-slider py-5">
       <div class="pizza-types d-flex justify-content-between">
 
         <div 
@@ -16,7 +16,7 @@
           :key="index"
           class="pizza-card d-flex justify-content-center align-items-center flex-column">
           <img :src = "require(`../assets/img/h3-product-img-${pizza.src}.png`)" :alt="pizza.name">
-          <p class="pt-3 pb-0">{{pizza.name}}</p>
+          <p class="pt-4 pb-0 mb-0">{{pizza.name}}</p>
           <span>{{pizza.price}}</span>
         </div>
         
