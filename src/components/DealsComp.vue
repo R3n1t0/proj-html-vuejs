@@ -26,7 +26,7 @@
             <h4>NOV</h4>
           </div>
           <div class="location">
-            <h4>TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO</h4>
+            <h4>TERARAZZA PATIO DINING SPACE OPENING THIS WEEKEND</h4>
             <p><i class="fa-solid fa-location-dot"></i> 204 E.Pizzetta Tommaso</p>
           </div>
         </div>
@@ -40,11 +40,9 @@
             <h4>NOV</h4>
           </div>
           <div class="location">
-            <h4>TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO</h4>
+            <h4>SIENNA PRIVATE DINING ROOM WITH STÉPHANE BRUNN</h4>
             <p><i class="fa-solid fa-location-dot"></i> 204 E.Pizzetta Tommaso</p>
           </div>
-        </div>
-        <div class="dots">
         </div>
       </div>
     </div>
