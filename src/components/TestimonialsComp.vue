@@ -6,27 +6,15 @@
       <div class="row py-2">
         <div class="col-3 rl-col pe-2">
           <img  src="../assets/img/h3-img-1.jpg" alt="img-1">
-          <div class="back">
-            <span><i class="fa-regular fa-eye"></i></span>
-          </div>
         </div>
         <div class="col-3 rl-col pe-2">
           <img src="../assets/img/h3-img-2.jpg" alt="img-2">
-          <div class="back">
-            <span><i class="fa-regular fa-eye"></i></span>
-          </div>
         </div> 
-        <div class="col-3 rl-col pe-2">
+        <div class="col-3 rl-col pe-1">
           <img src="../assets/img/h3-img-3.jpg" alt="img-3">
-          <div class="back">
-            <span><i class="fa-regular fa-eye"></i></span>
-          </div>
         </div>
-        <div class="col-3 rl-col ">
+        <div class="col-3 rl-col ps-1">
           <img src="../assets/img/h3-img-4.jpg" alt="img-4">
-          <div class="back">
-            <span><i class="fa-regular fa-eye"></i></span>
-          </div>
         </div>
       </div>
     </div>
@@ -65,38 +53,17 @@ export default {
 .rl-container{
   width: 100%;
   .rl-col{
-    position: relative;
     padding: 0;
+    background-image: url("../assets/img/hover-img.png");
+    background-position: center;
+    background-size: cover;
+
     img{
       width: 100%;
       height: 100%;
+      
       &:hover{
         display: none;
-      }
-    }
-
-    .back{
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: white;
-
-      span{
-        position: relative;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #d2401e;
-        i{
-          font-size: 20px;
-          position: absolute;
-          top: 42%;
-          left: 40%;
-          color: white;
-        }
       }
     }
   }
