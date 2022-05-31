@@ -27,7 +27,7 @@
         </nav>
 
         <div class="search-cart">
-          <img src="../assets/svg/svg-1.svg" alt="">
+          <img :src="svg1" alt="">
           <a href="#">CART</a>
           <i class="fa-solid fa-magnifying-glass mx-2"></i>
           <a href="#">SEARCH</a>
@@ -42,7 +42,8 @@ export default {
   name: "TopComp",
   data(){
     return{
-      svg0: require("../assets/svg/svg-0.svg")
+      svg0: require("../assets/svg/svg-0.svg"),
+      svg1: require("../assets/svg/svg-1.svg")
     }
   }
 }
@@ -59,7 +60,7 @@ export default {
     width: 30px;
     height: 10px;
     margin: 3px;
-    color: #ffffff;
+    filter: invert(1);
   }
   li{
      margin-right: 40px;
@@ -79,6 +80,12 @@ export default {
     margin-left: 40px;
   }
   .search-cart{
+    img{
+      width: 25px;
+      height: 20px;
+      margin: 3px;
+      filter: invert(1);
+    }
     a{
       text-decoration: none;
       color: #ffffff;

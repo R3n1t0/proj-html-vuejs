@@ -1,32 +1,32 @@
 <template>
-  <div class="jumbo-card d-flex justify-content-center">
+  <div class="jumbo-card d-flex justify-content-center align-items-center">
     <button class="prev d-flex justify-content-center align-items-end pb-1">PREV</button>
-    <img src="../assets/img/h3-rev-img-1.png" alt="rev-1">
-    <img class="first" src="../assets/img/h3-rev-img-2.png" alt="rev-2">
+    <div class="taste">
+      <img class="second" :src="slides[counterSlide].back">
+      <img class="first" :src="slides[counterSlide].front" alt="rev-2">
+    </div>
     <div class="next d-flex justify-content-center align-items-end pb-1">NEXT</div>
   </div>
- 
 </template>
 
 <script>
 export default {
   name: "JumboComp",
-}
 
-/*   data(){
+  data(){
     return{
       slides:[
         {
-          front: "../assets/img/h3-rev-img-2.png",
-          back: "../assets/img/h3-rev-img-1.png"
+          front: require("../assets/img/h3-rev-img-2.png"),
+          back: require("../assets/img/h3-rev-img-1.png")
         },
         {
-          front: "../assets/img/h3-rev-img-4.png",
-          back: "../assets/img/h3-rev-img-3.png"
+          front: require("../assets/img/h3-rev-img-4.png"),
+          back: require("../assets/img/h3-rev-img-3.png")
         },
         {
-          front: "../assets/img/h3-rev-img-6.png",
-          back: "../assets/img/h3-rev-img-5.png"
+          front: require("../assets/img/h3-rev-img-6.png"),
+          back: require("../assets/img/h3-rev-img-5.png")
         }
       ],
 
@@ -35,11 +35,6 @@ export default {
       autoScroll: null
     
     }
-  */
-
-/*   mounted(){
-    this.startAutoScroll();
-    this.changeImage(); 
   },
 
   methods: {
@@ -47,39 +42,46 @@ export default {
       this.counterSlide ++;
       if (this.counterSlide > this.slides.length - 1){
         this.counterSlide = 0;
-      }
+      }       
     },
     prevSlide(){
       this.counterSlide --;
       if (this.counterSlide < 0){
         this.counterSlide = this.slides.length -1;
       }
+
     },
-    changeImage(index){        
+    changeImage(index){           
       this.counterSlide = index;
     },
     mouseOver(){
       clearInterval(this.autoScroll);
       this.autoScroll = null;         
     },
-    mouseOut(){    
+    mouseOut(){         
       this.startAutoScroll();
     },
     startAutoScroll(){
       this.autoScroll = setInterval(() =>{
         this.nextSlide();
-      },3000)
+      },4000)
     }
-  }
-} */
+  },
 
+  mounted(){
+    this.startAutoScroll(); 
+  }
+}
 </script>
 
 <style lang="scss" scoped> 
 .jumbo-card{
   width: 100%;
   position: relative;
+  
   .first{
+    width: 350px;
+    height: 450px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -87,6 +89,12 @@ export default {
     right: 0;
     text-align: center;
   }
+
+  .second{
+    width: 850px;
+    height: 350px;
+  }
+  
   .prev, .next{
     position: absolute;
     width: 80px;
