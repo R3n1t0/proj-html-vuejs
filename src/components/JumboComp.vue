@@ -1,11 +1,14 @@
 <template>
   <div class="jumbo-card d-flex justify-content-center align-items-center">
-    <button class="prev d-flex justify-content-center align-items-end pb-1">PREV</button>
-    <div class="taste">
+    <button @click="prevSlide()" class="prev d-flex justify-content-center align-items-end pb-1">PREV</button>
+    <div 
+      @mouseenter="mouseOver()"
+      @mouseleave="mouseOut()"
+      class="taste">
       <img class="second" :src="slides[counterSlide].back">
       <img class="first" :src="slides[counterSlide].front" alt="rev-2">
     </div>
-    <div class="next d-flex justify-content-center align-items-end pb-1">NEXT</div>
+    <div @click="nextSlide()" class="next d-flex justify-content-center align-items-end pb-1">NEXT</div>
   </div>
 </template>
 
@@ -108,13 +111,15 @@ export default {
 
   .prev{
     transform: rotate(90deg);
-    left: -30px;
+    left: -31px;
     bottom: 50%;
+    cursor: pointer;
   }
   .next{
     transform: rotate(-90deg);
-    right: -30px;
+    right: -31px;
     bottom: 50%;
+    cursor: pointer;
   }
 }
 

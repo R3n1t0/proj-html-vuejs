@@ -44,13 +44,10 @@ export default {
   }
  
 }
-
 .clients{
   background-color: #f7f7f2;
   img{
     width: 17%;
   }
 }
-
-
 </style>
